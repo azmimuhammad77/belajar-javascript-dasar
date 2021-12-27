@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>in Operator</title>
+</head>
+<body>
+<script>
+
+    const data = {
+        name: "Azmi",
+        age: 20
+    };
+
+    // const cek = "name" in data;
+    // console.info(cek);
+
+    if("name" in data) {
+        console.log(`Hello ${data.name}`);
+    } else {
+        console.info("Hello");
+    }
+
+    const data2 = ["anggur", null, undefined];
+    const cek2 = 2 in data2;
+    console.info(cek2);
+
+</script>
+</body>
+</html>

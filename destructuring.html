@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Destructuring</title>
+</head>
+<body>
+<script>
+
+    {
+        const names = ["joko", "budi", "salim", "rojali", "agus"];
+
+        //cara lama
+        // console.info(names[0]);
+        // console.info(names[1]);
+        // console.info(names[2]);
+
+        //destructuring pada array
+        const names2 = [people1, people2, people3, ...other] = names;
+        console.info(people1);
+        console.info(people2);
+        console.info(people3);
+        console.info(other);
+    }
+
+  //destructuring pada object
+  let person = {
+      name: "Muhammad Azmi",
+      address: {
+          street: "Jl Mangga 5",
+          block: "Y",
+          number: 10
+      },
+      age: 20,
+      hobby: "read book"
+  }
+
+  //cara lama
+  // let name2 = person.name;
+  // let address = person.address;
+  // let age = person.age;
+
+  //destructuring pada object
+  const {name, address:{street, block, number}, age, hobby} = person;
+    console.info(name);
+  console.info(street);
+  console.info(number);
+  console.info(block);
+  console.info(age);
+  console.info(hobby);
+
+  //destructuring sebagai parameter function
+    function world({name, status, tall}) {
+        console.info(name);
+        console.info(status);
+        console.info(tall);
+    }
+
+    const newWorld = {
+        name: "agus",
+        status: "merried",
+        tall: 150
+    }
+
+    world(newWorld);
+
+    function hello([name, age, country]) {
+        console.info( `Hello ${name} you are ${age}, and you are from ${country}`);
+    }
+
+    const bio = ["Muhammad Azmi", 20, "Indonesia"];
+    hello(bio);
+
+    //destructuring default value pada array
+    const a = ["budi", "joko"];
+    const [firstName = "azmi", middleName = "charles", lastName = "asep"] = a;
+
+    console.info(firstName);
+    console.info(middleName);
+    console.info(lastName);
+
+    //destructuring default value pada object
+
+    const b = {
+        c: "agus",
+        n: "lionel",
+        o: "ronaldo"
+    };
+    const {c = "salim", n = "agnes", o = "susilo"} = b;
+    console.info(c);
+    console.info(n);
+    console.info(o);
+
+</script>
+</body>
+</html>

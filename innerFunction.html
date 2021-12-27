@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inner Function</title>
+</head>
+<body>
+<script>
+
+   /*
+        inner function hanya bisa diakses oleh induk functionnya saja.
+   */
+
+  function satu() { //a
+
+      function dua() { //b
+          console.info("indonesia");
+
+          function tiga() { //c
+            console.info("arab");
+          }
+
+      }
+
+      dua();
+      dua();
+
+  }
+
+  satu();
+
+</script>
+</body>
+</html>

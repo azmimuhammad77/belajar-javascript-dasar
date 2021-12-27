@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object Method Arrow Function</title>
+</head>
+<body>
+<script>
+
+    const animal = {
+        name: "badak",
+        func: (name2) => {
+            console.info(this);
+            console.info(`Hello ${name2} ${this.name}`);
+        }
+    }
+
+    animal.func("ikan");
+
+</script>
+</body>
+</html>

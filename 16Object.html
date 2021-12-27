@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const objectKosong = {};
+
+      const objectBiodata = {
+        nama: "Muhammad Azmi Fadhlurrahman",
+        umur: 21,
+        menikah: false,
+        alamat: "Pamulang Tangsel",
+        "asal sekolah": "SMA Waskito",
+      };
+
+      console.info(`Nama: ${objectBiodata.nama}`);
+      console.info(`Nama: ${objectBiodata.alamat}`);
+      console.info(`Alamat: ${objectBiodata["asal sekolah"]}`);
+
+      delete objectBiodata["menikah"];
+
+      console.table(objectBiodata);
+    </script>
+  </body>
+</html>

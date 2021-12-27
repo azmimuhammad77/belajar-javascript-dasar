@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operator Logika di Non Boolean</title>
+</head>
+<body>
+<script>
+
+    // operator || dan && bisa digukanan diluar boolean/percabangan
+    /* operator || akan mengambil value yang bernilai truthty yang pertama kali
+       ditemukan, jika semua bernilai falsy, maka nilai yang paling akhir yang akan
+       digunakan, operator || akan membaca dari kiri ke kanan */
+    /* operator && akan mengambil value yang bernilai falsy yang pertama kali
+       ditemukan, jika semua bernilai truthy, maka nilai yang paling akhir yang akan
+       digunakan, operator && akan membaca dari kiri ke kanan*/
+
+    console.info("senin" || false); //senin
+    console.info(0 || 1); //1
+    console.info("" || {}); //{}
+    console.info([] || -0); //[]
+    console.info(-0 || false); //false
+    console.info(undefined || "undefined"); //"undefined"
+    console.info("null" || null); //"null"
+
+    const name = {
+        firstName: "",
+        lastName: "Azmi"
+    }
+
+    console.info(name.firstName || name.lastName);
+
+    //&&
+    console.info("" && []); //""
+    console.info({} && 0); //0
+    console.info("halo" && "selamat"); //"selamat"
+    console.info(null && "NULL"); //null
+    console.info("undefined" && undefined); //undefined
+</script>
+</body>
+</html>

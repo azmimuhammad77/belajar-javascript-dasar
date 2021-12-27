@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scope</title>
+</head>
+<body>
+<script>
+
+   //global scope
+   let negara = "Indonesia";
+
+  function satu() {
+      //local scope function satu
+      let a = 1;
+      console.info(negara);
+  }
+
+  function dua() {
+      //local scope function dua
+      let b = 2;
+  }
+
+  // console.info(a);
+  // console.info(b);
+  satu();
+
+</script>
+</body>
+</html>

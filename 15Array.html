@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const arrayKosong = [];
+      const arrayNama = ["Budi", "Anton", "Mikel"];
+      const arrayCampur = ["Anjas", 1, true, 9.8];
+
+      arrayKosong.push("Gajah", "Gorilla", "Kudanil");
+      arrayKosong[1] = "Kelinci";
+      arrayKosong[0];
+
+      console.table(arrayKosong);
+
+      arrayKosong[2] = "Serigala";
+      console.table(arrayKosong);
+
+      delete arrayKosong[1];
+      console.table(arrayKosong);
+
+      arrayKosong[1] = "Semut";
+      console.table(arrayKosong);
+
+      console.info(arrayKosong[0]);
+      console.info(arrayKosong[1]);
+      console.info(arrayKosong[2]);
+
+      console.info(arrayKosong.length);
+    </script>
+  </body>
+</html>

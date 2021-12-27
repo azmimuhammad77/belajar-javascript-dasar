@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anonymous Function</title>
+</head>
+<body>
+<script>
+
+    let i = function (name) {
+        document.writeln(`Hello ${name}`);
+    }
+
+    i("asep");
+
+    function callBack(callback) {
+        callback("joko");
+    }
+
+    callBack(function(a) {
+        document.writeln(`<p>Selamat Pagi ${a}</p>`);
+    });
+
+</script>
+</body>
+</html>

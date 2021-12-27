@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function Value</title>
+</head>
+<body>
+<script>
+
+    function hello(name) {
+        document.writeln(`<p>Hello ${name}</p>`);
+    }
+
+    let fungsi = hello;
+
+    fungsi("budi");
+    hello("joko");
+
+    //function sebagai parameter function lain
+    function hello2(callback) {
+        callback("udin");
+    }
+
+    hello2(hello);
+    hello2(fungsi);
+
+</script>
+</body>
+</html>

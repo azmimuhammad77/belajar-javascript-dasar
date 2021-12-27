@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function Rest Parameter</title>
+</head>
+<body>
+<script>
+
+    function jumlah(name, ...value) {
+        let result = 0;
+        for (const index of value) {
+            result += index;
+        }
+        document.writeln(`<p>${name}, ${result}</p>`);
+    }
+
+    jumlah("andi", 9,5,2,3,4,3,4,5);
+
+    const newArray = [1,23,4,5,6,7,8,9];
+    jumlah("budi", ...newArray);
+
+    function sebutNama(...name) {
+        for (const index of name) {
+            document.writeln(`<p>Nama orang ini adalah ${index}</p>`);
+        }
+    }
+
+    arrayNama = ['alex', 'joko', 'susi'];
+    sebutNama(...arrayNama);
+
+    let number = 9.86750;
+    console.info(number.toFixed(3));
+
+</script>
+</body>
+</html>

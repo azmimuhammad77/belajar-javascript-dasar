@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const name = "Muhammad Azmi Fadhlurrahman";
+      const score = 80;
+      const absen = 50;
+      const template = `Name : ${name}`;
+      console.info(template);
+
+      const template2 = `Name : ${name}, Lulus : ${score > 70 && absen > 75}`;
+      console.info(template2);
+
+      const multiLine = `Nama saya joni,
+      saya bercita - cita menjadi dancer,
+      tetapi orang tua saya
+      menginginkan saya menjadi 
+      seorang ustadz`;
+
+      document.write("<pre>");
+      document.write(multiLine);
+      document.write("</pre>");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function Generator</title>
+</head>
+<body>
+<script>
+
+  function* get() {
+      yield "joko";
+      yield "budi";
+      yield "anto";
+  }
+
+  const data = get();
+  for (const datum of data) {
+      console.info(`Nama orang ini ${datum}`);
+  }
+
+</script>
+</body>
+</html>

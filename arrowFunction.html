@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrow Function</title>
+</head>
+<body>
+<script>
+
+    //function biasa
+    function say(name) {
+        return `Hello ${name}`;
+    }
+
+    //anonymous function
+    const say2 = function(name) {
+        return `Hello ${name}`;
+    }
+
+    //arrow function
+    const apple = (fruit) => {
+        console.info(`Hello ${fruit}`);
+    }
+
+    const apple2 = (fruit, name, ...rest) => {
+        console.info(`Hello ${fruit} and ${name}`);
+    }
+
+    const a = name => {
+        return `Hello ${name}`;
+    }
+
+    const b = name => console.info(`Hello ${name}`);
+
+    const c = () => console.log("HELLO WORLD");
+
+    let newFunction = function (callback) {
+        callback("joko");
+    };
+
+    newFunction(name => console.info(`Hello ${name}`));
+    
+</script>
+</body>
+</html>

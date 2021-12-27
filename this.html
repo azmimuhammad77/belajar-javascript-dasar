@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>this</title>
+</head>
+<body>
+<script>
+
+  console.info(this); //window
+
+  function name(name) {
+      console.info(this); //window
+  }
+
+  name()
+
+  function name2() {
+      console.info(this); //window
+
+      function name3() {
+          console.info(this); //window
+      }
+
+      name3()
+  }
+
+  name2()
+
+    let name4 = {
+      nama1: "budi",
+      hello: function (nama) {
+          console.info(`Hello ${nama}, My name is ${this.nama1}`);
+      }
+    }
+
+    name4.hello("azmi");
+
+</script>
+</body>
+</html>

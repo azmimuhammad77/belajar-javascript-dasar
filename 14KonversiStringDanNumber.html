@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const string = Number("1234567890");
+      const value = parseInt("345");
+      const data = parseFloat("4.5");
+
+      document.write(`<p>${string}</p>`);
+      document.write(`<p>${data}</p>`);
+      document.write(`<p>${value}</p>`);
+
+      const result = 2;
+      const result2 = 3;
+      const result3 = result.toString() + result2.toString();
+
+      document.write(`<p>${result3}</p>`);
+
+      document.write(`<p>${parseInt("1234oke")}</p>`); //1234
+      document.write(`<p>${parseFloat("1.234oke")}</p>`); //1.234
+
+      document.write(`<p>${Number("1234oke")}</p>`); //NaN
+      document.write(`<p>${Number("1234oke")}</p>`); //NaN
+
+      const first = Number("text"); //NaN
+      const total = first + 100;
+      document.write(`<p>${total}</p>`);
+
+      document.write(`<p>${isNaN(result)}</p>`); //false
+      document.write(`<p>${isNaN(first)}</p>`); //true
+      document.write(`<p>${isNaN(NaN)}</p>`); //true
+    </script>
+  </body>
+</html>

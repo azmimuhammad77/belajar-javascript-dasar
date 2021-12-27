@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch</title>
+</head>
+<body>
+<script>
+
+    let score = "A";
+
+    switch (score) {
+        case "A":
+            document.writeln("<p>Selamat Anda Lulus Dengan Nilai Sempurna</p>");
+            break;
+        case "B":
+        case "C":
+            document.writeln("Selamat Anda Lulus");
+            break;
+        case "D":
+            document.writeln("Anda Belum Lulus");
+            break;
+        default:
+            document.writeln("Anda Salah Jurusan");
+    }
+
+    // if(score === "A") {
+    //     document.writeln("Selamat Anda Lulus Dengan Nilai Sempurna");
+    // } else if(score === "B" || score === "C") {
+    //     document.writeln("Selamat Anda Lulus");
+    // } else if(score === "D") {
+    //     document.writeln("Anda Tidak Lulus");
+    // } else {
+    //     document.writeln("Anda Salah Jurusan");
+    // }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object Method</title>
+</head>
+<body>
+<script>
+
+    const person = {
+        name: "azmi",
+        hello: function (name) {
+            console.info(`Hello ${name}`);
+        }
+    };
+
+    person.hello("joko");
+
+    const person2 = {
+        name: "udin"
+    };
+
+    person2.newFunction = function (a) {
+        console.info(`Hello ${a}`);
+    };
+
+    person2.newFunction("budi");
+
+</script>
+</body>
+</html>
